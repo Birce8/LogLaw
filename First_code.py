@@ -14,6 +14,9 @@ class FirstLaw(FloatLayout):
         self.add_widget(variable1)
         self.v1 = TextInput(text='',pos_hint={'x': .2, 'center_y': .9}, size_hint=(.1, .1))
         self.add_widget(self.v1)
+        variable2=Label(text='let Log(N)= ',pos=(-100,220))
+        variable2.font_size = '20dp'
+        self.add_widget(variable2)
 
 class MyApp(App):
     title= "First Law"
