@@ -8,7 +8,7 @@ import math
 from kivy.uix.popup import Popup
 
 class Menu(FloatLayout):
-
+    
     def __init__(self, **kwargs):
         super(Menu, self).__init__(**kwargs)
         self.cols = 2
