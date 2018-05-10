@@ -3,7 +3,9 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.label import Label
 from kivy.uix.button import Button
+from kivy.uix.textinput import TextInput
 import math
+from kivy.uix.popup import Popup
 
 class Menu(FloatLayout):
 
@@ -23,14 +25,19 @@ class Menu(FloatLayout):
         self.add_widget(fourth)
         fifth= Button(pos_hint={'x': .1, 'center_y': .3}, size_hint=(.5, .1),text= 'Log_B(B)=1')
         self.add_widget(fifth)
-        first.bind(on_release=FirstLaw)
-    
+        first.bind(on_release=FirstLaw.display)
+
 class FirstLaw(FloatLayout):
-    pass
+
+   def display(self,*args):
+        popup = Popup(title='Product Law',
+              auto_dismiss=False)
+        popup.open()
+		
 
 
 class MyApp(App):
-
+    title= "Log Laws"
     def build(self):
         return Menu()
 
