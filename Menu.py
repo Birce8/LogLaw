@@ -44,6 +44,8 @@ class Menu(Screen):
     def initOnClicks(self):
         self.__first.bind(on_release=self.Switch_First_Law)
     def Switch_First_Law(self, *args):
+        global sm
         sm.add_widget(FirstLaw.FirstLaw(name="FirstLaw"))
         sm.current = "FirstLaw"
+        FirstLaw.sm = sm
         return

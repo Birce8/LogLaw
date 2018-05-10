@@ -7,8 +7,9 @@ from kivy.uix.textinput import TextInput
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.properties import ObjectProperty, NumericProperty
 
-class FirstLaw(Screen):
+sm = None
 
+class FirstLaw(Screen):
     def __init__(self, **kwargs):
         super(FirstLaw, self).__init__(**kwargs)
         variable1=Label(text='let Log(M)= ',pos=(-325,220))
