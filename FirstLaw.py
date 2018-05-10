@@ -4,8 +4,10 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.label import Label
 from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
+from kivy.uix.screenmanager import ScreenManager, Screen
+from kivy.properties import ObjectProperty, NumericProperty
 
-class FirstLaw(FloatLayout):
+class FirstLaw(Screen):
 
     def __init__(self, **kwargs):
         super(FirstLaw, self).__init__(**kwargs)
@@ -17,11 +19,3 @@ class FirstLaw(FloatLayout):
         variable2=Label(text='let Log(N)= ',pos=(-100,220))
         variable2.font_size = '20dp'
         self.add_widget(variable2)
-
-class MyApp(App):
-    title= "First Law"
-    def build(self):
-        return FirstLaw()
-
-if __name__ == '__main__':
-    MyApp().run()
