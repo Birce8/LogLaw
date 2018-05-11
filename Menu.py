@@ -5,11 +5,14 @@ from kivy.uix.label import Label
 from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
 import math
-from kivy.uix.popup import Popup
 from kivy.uix.screenmanager import ScreenManager, Screen
-from kivy.properties import ObjectProperty, NumericProperty
-
+#from kivy.properties import ObjectProperty, NumericProperty
 import FirstLaw
+
+######
+#Function: display Main menu which lists the different Logarithmic Laws
+#######
+
 
 sm = None
 

@@ -1,7 +1,7 @@
 import Menu
 from kivy.app import App
 from kivy.uix.screenmanager import ScreenManager, Screen
-from kivy.properties import ObjectProperty, NumericProperty
+#from kivy.properties import ObjectProperty, NumericProperty
 
 class MyApp(App):
     TITLE = "Log Laws"
