@@ -34,7 +34,7 @@ class Menu(Screen):
         title.font_size = '40dp'
         self.add_widget(title)
     def initWidgets(self):
-        self.__first = Button(pos_hint={'x': .1, 'center_y': .7}, size_hint=self.BUTTON_SIZE,text= 'Log_B(MN)=Log_B(M)+Log_B(N)')
+        self.__first = Button(pos_hint={'x': .1, 'center_y': .7}, size_hint=self.BUTTON_SIZE,text= 'Log[sub]B[/sub](MN)=Log_B(M)+Log_B(N)', markup = True)
         self.add_widget(self.__first)
         self.__second = Button(pos_hint={'x': .1, 'center_y': .6}, size_hint=self.BUTTON_SIZE,text= 'Log_B(M/N)=Log_B(M)-Log_B(N)')
         self.add_widget(self.__second)
